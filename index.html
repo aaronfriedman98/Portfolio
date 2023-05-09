@@ -18,26 +18,48 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" style="height: 170px; width: 170px;" class="image avatar"><img src="images/portfolioHeadshot.jpg" alt="" /></a>
-					<h1 style="margin-top: 25px;"><strong>Aaron Friedman</strong>,<br> Full stack web developer</h1>
+					<h1 style="margin-top: 25px;"><strong>Aaron Friedman</strong>,<br> Full stack web developer</h1> <br><br>
+					<ul style=" list-style: none !important; margin: 0 !important; padding-left: 0 !important;">
+						<li><a href="#main" class="navLinks link1">Summary</a></li>
+						<li><a href="#skills" class="navLinks link2">Skills</a></li>
+						<li><a href="#projects" class="navLinks link3">Projects</a></li>
+						<li><a href="#contact" class="navLinks link4">Contact Me</a></li>
+					</ul>
 				</div>
+				
 			</header>
+			
+			<style>
+				.navLinks {
+					border-bottom: none !important;
+					color: white;
+					color: #a2a2a2;
+					cursor: pointer;
+				}
+				#header .inner li {
+					padding-left: 0 !important;
+				}
+				.navLinks:hover {
+					color: white !important;
+				}
+			</style>
 
 		<!-- Main -->
-			<div id="main">
+			<div id="main" >
 
 				<!-- One -->
 					<section id="one">
-						<header class="major">
+						<header class="major" >
 							<h2>Welcome to my portfolio website!<br />
 							</h2>
 						</header>
 						<p>I am a skilled and passionate full stack web 
-							developer with a Bachelor of Science in Computer 
-							Science. With a proven track record of designing 
-							and implementing dynamic and responsive web 
-							applications, I excel at translating client 
-							requirements into efficient, user-friendly 
-							interfaces. Proficient in both front-end and 
+							developer, proficient in designing and implementing 
+							dynamic and responsive web applications. With a Bachelor 
+							of Science degree in Computer Science, I excel at translating 
+							client requirements into efficient, user-friendly interfaces.
+							My track record demonstrates a proven ability to deliver high-quality solutions
+							that exceed expectations. Proficient in both front-end and 
 							backend development, I bring a strong foundation 
 							in programming and software development practices 
 							to every project. With excellent problem-solving 
@@ -50,10 +72,11 @@
 							projects below to see how I can bring your web 
 							development needs to life!</p>
 						<ul class="actions">
-							<li><a href="#two" class="button" style="position: relative;">Projects <i class="fa-solid fa-angle-down" style="position: absolute; top: 17px; right: 30px;"></i></a></li>
+							<li><a href="#projects" class="button link5" style="position: relative; padding-right: 50px;">Projects <i class="fa-solid fa-angle-down" style="position: absolute; top: 17px; right: 35px;"></i></a></li>
 						</ul>
 					</section>
 
+					
 				
 				<!-- Four -->
 				
@@ -110,7 +133,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 										<li>Version Control: Git, GitHub</li>
 										<li>Porblem Solving</li>
 										<li>Collaboration and Teamwork</li>
-										<li>Communication</li>
+										<li  id="skills">Communication</li>
 									</ul>
 									
 									<!-- <h3>Education</h3>
@@ -393,21 +416,21 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<h2>My Projects</h2>
 	<div class="row">
 		<article class="col-6 col-12-xsmall work-item" style="text-align: center">
-			<a href="images/testdbs.gif" class="image fit thumb"><img src="images/testdbs.gif" alt="d" /></a>
+			<a  id="projects" href="images/testdbs.gif" class="image fit thumb"><img src="images/testdbs.gif" alt="d" /></a>
 			<h3 style="font-size: larger;">Detroit Bridal Shower Project</h3>
 			<h4> 
-				Digital platform revolutionizing community contributions 
-				for young newlyweds in the Detroit Orthodox Jewish community. 
-				Our dynamic web application streamlines the process of 
-				establishing new homes by enabling community members to 
-				contribute funds effortlessly. With features like automated 
-				customized emails, secure user access, and seamless image 
-				uploads, our platform ensures a seamless and efficient 
-				experience for engaged couples and community members alike.</h4>
+				Digital platform revolutionizing community support and 
+				engagements for young newlyweds in the Detroit Orthodox 
+				Jewish community. 
+				Our dynamic web application facilitates seamless submission 
+				of new couples, streamlined verification by the admin, and 
+				automated collection emails to a vast audience. Discover past 
+				bridal shower hostesses through captivating image uploads on 
+				our announcements page.</h4>
 				<a href="#" class="button small">Visit</a>
 		</article>
 		<article class="col-6 col-12-xsmall work-item"  style="text-align: center">
-			<a href="images/adminFinally.gif" class="image fit thumb"><img src="images/adminFinally.gif" alt="" /></a>
+			<a href="images/croppedAdmin2.gif" class="image fit thumb"><img src="images/croppedAdmin2.gif" alt="" /></a>
 			<h3 style="font-size: larger;">Admin Page (Detroit Bridal Shower)</h3>
 			<h4>The admin page, an integral part of the Detroit Bridal Shower 
 				website, provides secure access and comprehensive control 
@@ -417,7 +440,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				verify, and delete couples as needed, ensuring the accuracy 
 				and integrity of the platform.
 				One of the key functionalities of the admin page is the 
-				ability to send out collection emails to the community, 
+				ability to manually send out collection emails to the community, 
 				notifying them of new engagements and ongoing campaigns. 
 				Moreover, the admin page enables administrators to upload 
 				images that showcase the hostesses of past bridal showers, 
@@ -470,7 +493,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<div class="row">
 		<div class="col-8 col-12-small">
 			<form method="post" action="#">
-				<div class="row gtr-uniform gtr-50">
+				<div class="row gtr-uniform gtr-50"  id="contact">
 					<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 					<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
 					<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
@@ -525,6 +548,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</footer>
 
 		<!-- Scripts -->
+			<script src="assets/js/smoothScroll.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
