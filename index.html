@@ -53,24 +53,14 @@
 							<h2>Welcome to my portfolio website!<br />
 							</h2>
 						</header>
-						<p>I am a skilled and passionate full stack web 
-							developer, proficient in designing and implementing 
-							dynamic and responsive web applications. With a Bachelor 
-							of Science degree in Computer Science, I excel at translating 
-							client requirements into efficient, user-friendly interfaces.
-							My track record demonstrates a proven ability to deliver high-quality solutions
-							that exceed expectations. Proficient in both front-end and 
-							backend development, I bring a strong foundation 
-							in programming and software development practices 
-							to every project. With excellent problem-solving 
-							skills and a collaborative mindset, I thrive both 
-							independently and as part of a multidisciplinary team. 
-							I'm currently seeking opportunities to contribute my 
-							skills and expertise to a tech company with a global 
-							presence, where I can make a meaningful impact and be 
-							part of a dynamic, innovative team. Take a look at my 
-							projects below to see how I can bring your web 
-							development needs to life!</p>
+						<p style="line-height: 35px; font-size: 18px">
+							I am a <span style="font-weight: bold;">skilled and passionate full stack web developer</span>, proficient in designing and implementing dynamic and responsive web applications.
+With a Bachelor of Science degree in Computer Science, I excel at translating client requirements into efficient, user-friendly interfaces.
+ <span style="font-weight: bold;">Proficient in both front-end and backend development</span>, I bring a strong foundation in programming and software development practices to every project.
+With excellent problem-solving skills and a collaborative mindset, I thrive both independently and as part of a multidisciplinary team.
+I'm currently seeking opportunities to contribute my skills and expertise to a company
+where I can make a meaningful impact and be part of a dynamic, innovative team.
+Take a look at my projects below to see how I can bring your web development needs to life!
 						<ul class="actions">
 							<li><a href="#projects" class="button link5" style="position: relative; padding-right: 50px;">Projects <i class="fa-solid fa-angle-down" style="position: absolute; top: 17px; right: 35px;"></i></a></li>
 						</ul>
@@ -126,12 +116,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								<div class="col-6 col-12-xsmall">
 									<h3>Skills</h3>
 									<ul>
-										<li>Front-end Development: HTML, CSS, JavaScript, React</li>
-										<li>Back-end Development: Node.js, Express, MongoDB, SQL</li>
+										<li>Front-end Development: HTML, CSS, JavaScript, EJS, React</li>
+										<li>Back-end Development: Node, Express, MongoDB, Azure CosmosDB, SQL</li>
 										<li>Web Design: UI/UX, Responsive Design, Wireframing</li>
 										<li>Programming Languages: JavaScript, C#, Python</li>
 										<li>Version Control: Git, GitHub</li>
-										<li>Porblem Solving</li>
+										<li>Problem Solving</li>
 										<li>Collaboration and Teamwork</li>
 										<li  id="skills">Communication</li>
 									</ul>
@@ -427,7 +417,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				automated collection emails to a vast audience. Discover past 
 				bridal shower hostesses through captivating image uploads on 
 				our announcements page.</h4>
-				<a href="#" class="button small">Visit</a>
+				<a href="https://detroit-bridal-shower.azurewebsites.net/" class="button small">Visit</a>
 		</article>
 		<article class="col-6 col-12-xsmall work-item"  style="text-align: center">
 			<a href="images/croppedAdmin2.gif" class="image fit thumb"><img src="images/croppedAdmin2.gif" alt="" /></a>
@@ -446,10 +436,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				images that showcase the hostesses of past bridal showers, 
 				adding a personal touch and fostering a sense of community. 
 			</h4>
-			<a href="#" class="button small">Visit</a>
+			<!-- <a href="#" class="button small">Visit</a> -->
 		</article>
 		<article class="col-6 col-12-xsmall work-item" style="text-align: center">
-			<a href="images/ayzertechFinally.gif" class="image fit thumb"><img src="images/ayzertechFinally.gif" alt="" /></a>
+			<a href="images/newAyzer2.gif" class="image fit thumb"><img src="images/newAyzer2.gif" alt="" /></a>
 			<h3 style="font-size: larger;">AyzerTech</h3>
 			<h4>Ayzertech is a public adjusting company that operates globally, 
 				helping clients navigate the complexities of insurance claims with ease. 
@@ -460,7 +450,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				while an aesthetically pleasing design enhances engagement and ensures effortless navigation. 
 				The website's user-friendly contact form also enables clients to connect with AyzerTech for personalized assistance. 
 				Experience the ease of insurance claim management with AyzerTech's innovative and client-centric approach.</h4>
-				<a href="https://ayzer-tech.netlify.app/" class="button small">Visit</a>
+				<a href="http://ayzertech.com/" class="button small">Visit</a>
 		</article>
 		<!-- <article class="col-6 col-12-xsmall work-item">
 			<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
@@ -492,16 +482,19 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		Looking forward to connecting with you!</p>
 	<div class="row">
 		<div class="col-8 col-12-small">
-			<form method="post" action="#">
+			<form method="POST" action="https://formsubmit.co/f3f0e4c34d183469f810d8b4a7a3f9c1">
 				<div class="row gtr-uniform gtr-50"  id="contact">
-					<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-					<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-					<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-				</div>
+					<input type="hidden" name="_subject" value="Message">
+					<input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+					<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required/></div>
+					<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" requiredd/></div>
+					<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4" required></textarea></div>
+				</div><br>
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" /></li>
+				</ul>
 			</form>
-			<ul class="actions">
-				<li><input type="submit" value="Send Message" /></li>
-			</ul>
+			
 		</div>
 		<div class="col-4 col-12-small">
 			<ul class="labeled-icons">
@@ -531,11 +524,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<div class="inner">
 					<ul class="icons">
 						
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://github.com/aaronfriedman98" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="mailto:aronfriedman98@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 
-						<li><a href="#" style="font-size: 25px;"class="icon2 solid fa-brands fa-linkedin"><span class="label"></span></a></li>
+						<li><a href="" style="font-size: 25px; border-bottom:none;"class="icon2 solid fa-brands fa-linkedin"><span class="label"></span></a></li>
 
 						
 
